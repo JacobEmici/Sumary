@@ -6,16 +6,27 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    border-radius: 30px;
+    
 }
 
 h2{
     font-size: 20px;
 }
 
-header{
+.container_result{
     background-color: #5d00ff;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,8 +38,8 @@ header{
 
 .score{
     background-image: linear-gradient(357deg,#5b53d700 ,#2000cd);
-    width: 140px;
-    height: 140px;
+    width: 8.75rem;
+    height: 8.75rem;
     border-radius: 90px;
     display: flex;
     flex-direction: column;
@@ -38,11 +49,11 @@ header{
 }
 
 .score h1{
-    font-size: 45px;
+    font-size: 2.8rem;
 }
 
 .score p{
-    font-size: 13px;
+    font-size: 0.8rem;
     color: rgb(205 200 200 / 70%);
     margin-top: 10px;
 }
@@ -62,8 +73,8 @@ header{
 
 .sub-title p{
     text-align: center;
-    width: 245px;
-    height: 56px;
+    width: 15.3rem;
+    height: 3.5rem;
     margin-top: 10px;
     font-size: 15px;
 }
@@ -105,7 +116,7 @@ header{
 
 .reaction, .memory, .verbal, .visual{
     width: 100%;
-    height: 44px;
+    height: 2.7rem;
     display: flex;
     border-radius: 10px;
     align-items: center;
@@ -155,7 +166,7 @@ footer{
 
 .final{
     display: flex;
-    width: 262px;
+    width: 100%;
     height: 44px;
     background-color: #0b0e4ccc;
     color: white;
@@ -164,4 +175,127 @@ footer{
     justify-content: center;
     border-radius: 25px;
     font-size: 15px;
+}
+
+
+:root{
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@media(min-width:1024px){
+    .container{
+        width: 71%;
+        height: 77%;
+        display: flex;
+        box-shadow: 14px 12px 20px 0px #9292f17d;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .container_result{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 30px;
+    }
+
+    .score{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
+
+    .score h1{
+        font-size: 7rem;
+    }
+
+    .score p{
+        font-size: 1.5rem;
+    }
+
+    .sub-title h1{
+        font-size: 3rem;
+    }
+
+    .sub-title p{
+        font-size: 1.5rem;
+        width: 332px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .sumary{
+        width: 50%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sumary_content{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .sumary_content--title{
+        width: 100%;
+    }
+    .status{
+        width: 100%;
+        height: 78%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .status img{
+        margin-left: 10px;
+    }
+
+    .reaction, .memory, .verbal, .visual{
+        height: 16%;
+        display: flex;
+        justify-content: flex-start;
+       
+    }
+
+    .result{
+        margin-left: 50%;
+    }
+    
+    .result2{
+        margin-left: 50%;
+    }
+    .result3{
+        margin-left: 50%;
+    }
+    .result4{
+        margin-left: 50%;
+    }   
+
+    
+    .final{
+        width: 100%;
+        height: 5rem;
+        font-size: 2rem;
+        border-radius: 50px;
+    }
+
 }
